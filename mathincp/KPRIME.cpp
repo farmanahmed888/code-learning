@@ -5,7 +5,7 @@ int arr[MAX];
 void precomputeSOE(){
 	for(int i = 2; i < MAX; i++){
 		if(arr[i] != 0) continue;
-		for(int j = i; j <= n; j += i){
+		for(int j = i; j <= MAX; j += i){
 			arr[j]++;
 		}
 	}
