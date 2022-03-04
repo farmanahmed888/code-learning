@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int MAX = 1e5 +1;
+const int MAX = 100005 +1;
 int arr[MAX];
 void precomputeSOE(){
 	for(int i = 2; i < MAX; i++){
@@ -21,6 +21,6 @@ int main(){
 		for(int i = a; i <= b; i++){
 			if(arr[i] == k) count++;
 		}
-		count<<count<<"\n";
+		cout<<count<<"\n";
 	}
 }
