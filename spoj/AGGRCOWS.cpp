@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-//https://www.spoj.com/problems/AGGRCOW/
+
 int n;
 const int N = 1e5 + 7;
 long long int pos[N];
@@ -15,7 +15,7 @@ bool predicate(int dist) {
 			if (cnt == c) return true;
 			lastPos = pos[i];
 		}
-		
+
 	}
 	return false;
 }
@@ -31,17 +31,14 @@ int main() {
 		sort(pos, pos + n);
 		int lo = 0;
 		int hi = 1e9;
-		while (hi - lo > 1) {
+		while (lo < hi) {
 			int mid = (lo + hi) / 2;
 			if (predicate(mid)) {
-				lo = mid;
+				lo = mid + 1;
 			} else {
-				hi = mid - 1;
+				hi = mid;
 			}
 		}
-		if (predicate(hi))
-			cout << hi << "\n";
-		else
-			cout << lo << "\n";
+		cout << hi - 1 << endl;
 	}
 }
