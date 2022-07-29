@@ -7,7 +7,7 @@ void solve(){
 	std::vector<pair<int,int> > b;
 	for(int i = 0; i < n; i++){
 		int input;
-		cin>>;input;
+		cin>>input;
 		a.push_back(make_pair(input,i));
 	}
 	for(int i = 0; i < m; i++){
