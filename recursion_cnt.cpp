@@ -11,7 +11,7 @@ int subsequence(int i, int arr[], vector<int> &v, int n, int sum) {
 			cout << "}";
 			cout << "\n";
 			return 1;
-		}//
+		}
 		return 0;
 	}
 	v.push_back(arr[i]);
