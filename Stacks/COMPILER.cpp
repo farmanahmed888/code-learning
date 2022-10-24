@@ -11,7 +11,7 @@ void solve(){
 			count++;
 		}
 		else{
-			count--;
+			count--;//
 		}
 		if(count == -1){
 		    ans = i;
