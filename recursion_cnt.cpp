@@ -5,7 +5,7 @@ int subsequence(int i, int arr[], vector<int> &v, int n, int sum) {
 	if (i >= n) {
 		if (sum == 2) {
 			cout << "{ ";
-			for (auto x : v) {
+			for (auto x : v) {//abc
 				cout << x << " ";
 			}
 			cout << "}";
